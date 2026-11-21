@@ -1,0 +1,11 @@
+runtime_resource_overlay {
+    name: "KicFrameworksOverlay",
+    theme: "KicFrameworksOverlay",
+    product_specific: true,
+    resource_dirs: ["overlay/KicFrameworksOverlay/res"],
+    manifest: "overlay/KicFrameworksOverlay/AndroidManifest.xml",
+    overrides: [
+        "Updater",
+        "UpdaterOverlayHaydn",
+    ],
+}
