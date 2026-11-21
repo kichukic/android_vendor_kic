@@ -46,3 +46,8 @@ ifneq ($(wildcard vendor/kic-priv/keys/releasekey.x509.pem),)
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/kic-priv/keys/releasekey
 PRODUCT_EXTRA_RECOVERY_KEYS += vendor/kic-priv/keys/releasekey
 endif
+
+# Security: Play Integrity & TrickyStore hardware keybox attestation
+PRODUCT_COPY_FILES += \
+    vendor/kic/security/keybox.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/security/keybox.xml \
+    vendor/kic/security/pif.json:$(TARGET_COPY_OUT_PRODUCT)/etc/security/pif.json

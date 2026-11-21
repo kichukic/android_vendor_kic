@@ -1,0 +1,16 @@
+{
+  "PRODUCT": "caiman",
+  "DEVICE": "caiman",
+  "MANUFACTURER": "Google",
+  "BRAND": "Google",
+  "MODEL": "Pixel 9 Pro",
+  "FINGERPRINT": "google/caiman/caiman:15/AP4A.241114.002/12586716:user/release-keys",
+  "SECURITY_PATCH": "2024-11-05",
+  "DEVICE_INITIAL_SDK_INT": "35",
+  "ID": "AP4A.241114.002",
+  "TYPE": "user",
+  "TAGS": "release-keys",
+  "spoofBuild": "1",
+  "spoofProps": "1",
+  "spoofSignature": "1"
+}
