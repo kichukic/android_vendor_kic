@@ -1,0 +1,12 @@
+--- /tmp/bakasu.orig	2026-11-21 12:29:28.933101905 +0000
++++ bakasu/Android.mk	2026-11-21 12:29:28.934101906 +0000
+@@ -24,6 +24,9 @@
+ LOCAL_CERTIFICATE := PRESIGNED
+ LOCAL_PRODUCT_MODULE := true
+ LOCAL_DEX_PREOPT := false
++# Prebuilt, installed byte-for-byte and never preopted; its optional androidx.window
++# uses-library tags trip the dexpreopt manifest check, so skip it for this module.
++LOCAL_ENFORCE_USES_LIBRARIES := false
+ LOCAL_MULTILIB := 64
+ LOCAL_PREBUILT_JNI_LIBS := \
+     lib/arm64-v8a/libadbroot.so \

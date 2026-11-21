@@ -11,7 +11,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.kic.variant=$(KIC_VARIANT) \
     ro.kic.display.version=$(KIC_DISPLAY_VERSION) \
     ro.kic.build.date=$(KIC_BUILD_DATE) \
-    ro.kic.device=$(TARGET_DEVICE)
+    ro.kic.releasetype=UNOFFICIAL \
+    ro.kic.maintainer=KIC
 
 # Google apps
 ifeq ($(WITH_GMS),true)
@@ -22,7 +23,6 @@ $(call inherit-product, vendor/kic/gapps/gapps.mk)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.setupwizard.mode=OPTIONAL \
     ro.setupwizard.rotation_locked=true \
-    setupwizard.theme=glif_v4 \
     ro.opa.eligible_device=true \
     ro.com.google.gmsversion=17
 endif

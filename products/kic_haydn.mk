@@ -24,3 +24,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Xiaomi/haydn_global/haydn:14/UKQ1.231207.002/V816.0.19.0.UKKMIXM:user/release-keys \
     DeviceProduct=haydn \
     SystemName=haydn_global
+
+# KIC OS device id
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.kic.device=haydn
