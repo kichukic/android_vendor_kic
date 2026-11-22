@@ -57,7 +57,3 @@ PRODUCT_COPY_FILES += \
 
 # Google Pixel Sounds
 $(call inherit-product-if-exists, vendor/google/sounds/config.mk)
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=The_big_adventure.ogg \
-    ro.config.notification_sound=Popcorn.ogg \
-    ro.config.alarm_alert=Bright_morning.ogg
