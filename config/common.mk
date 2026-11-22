@@ -12,7 +12,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.kic.display.version=$(KIC_DISPLAY_VERSION) \
     ro.kic.build.date=$(KIC_BUILD_DATE) \
     ro.kic.releasetype=UNOFFICIAL \
-    ro.kic.maintainer=KIC
+    ro.kic.maintainer=Kishor
+
+KIC_MAINTAINER := Kishor
+LINEAGE_MAINTAINER := Kishor
 
 # Google apps
 ifeq ($(WITH_GMS),true)
