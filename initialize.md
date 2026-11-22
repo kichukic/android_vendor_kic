@@ -111,7 +111,7 @@ Create `.repo/local_manifests/kic_haydn.xml`:
 
     <!-- haydn Device Trees, Kernel & Hardware -->
     <project name="kichukic/device_xiaomi_haydn" path="device/xiaomi/haydn" remote="gh" revision="kic-24.0" />
-    <project name="kichukic/device_xiaomi_sm8350-common" path="device/xiaomi/sm8350-common" remote="gh" revision="kic-24.0" />
+    <project name="kichukic/android_device_xiaomi_sm8350-common" path="device/xiaomi/sm8350-common" remote="gh" revision="kic-24.0" />
     <project name="kichukic/android_kernel_xiaomi_sm8350" path="kernel/xiaomi/sm8350" remote="gh" revision="kic-24.0" />
     <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="gh" revision="lineage-24.0" />
 
@@ -120,8 +120,20 @@ Create `.repo/local_manifests/kic_haydn.xml`:
     <project name="TheMuppets/proprietary_vendor_xiaomi_sm8350-common" path="vendor/xiaomi/sm8350-common" remote="gh" revision="lineage-24.0" />
 
     <!-- Camera & Audio Enhancements -->
-    <project name="kichukic/android_vendor_xiaomi_miuicamera-haydn" path="vendor/xiaomi/miuicamera-haydn" remote="gh" revision="main" />
+    <project name="kichukic/vendor_xiaomi_miuicamera-haydn" path="vendor/xiaomi/miuicamera-haydn" remote="gh" revision="17.0" />
     <project name="kichukic/hardware_dolby" path="hardware/dolby" remote="gh" revision="main" />
+    <project name="kichukic/android_vendor_kic_gapps" path="vendor/kic/gapps" remote="gh" revision="main" />
+
+    <!-- Penguin OS UI & Experience Mods -->
+    <project name="kichukic/penguin_packages_apps_PenguinLaboratory" path="packages/apps/PenguinLaboratory" remote="gh" revision="celerity" />
+    <project name="kichukic/penguin_packages_apps_PenguinSystemUI" path="packages/apps/PenguinSystemUI" remote="gh" revision="celerity" />
+    <project name="kichukic/penguin_packages_apps_PenguinDex" path="packages/apps/PenguinDex" remote="gh" revision="celerity" />
+    <project name="kichukic/packages_apps_LMOFreeform" path="packages/apps/LMOFreeform" remote="gh" revision="celerity" />
+    <project name="kichukic/packages_apps_GameSpace" path="packages/apps/GameSpace" remote="gh" revision="celerity" />
+
+    <!-- RisingOS Personalizations & VendorSupport (PIF, Keybox & Spoofing Suite) -->
+    <project name="kichukic/android_packages_apps_Personalizations" path="packages/apps/Personalizations" remote="gh" revision="seventeen" />
+    <project name="kichukic/android_packages_apps_VendorSupport" path="packages/apps/VendorSupport" remote="gh" revision="seventeen" />
 </manifest>
 ```
 
